@@ -1,0 +1,1 @@
+var TERRAIN_GEN = TERRAIN_GEN || {};

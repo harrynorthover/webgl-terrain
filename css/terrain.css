@@ -1,0 +1,27 @@
+body {
+	background: #141414 url('../assets/background.jpg') no-repeat;
+	color: #fff;
+	margin: 0px;
+}
+
+#title {
+	position: absolute;
+	top: 20;
+	left: 40;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: courier;
+	font-weight:100;
+	font-size: 26px;
+}
+
+a, a:visited {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2FA1D6;
+}
