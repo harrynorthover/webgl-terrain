@@ -1,6 +1,7 @@
 body {
 	background: #141414 url('../assets/background.jpg') no-repeat;
 	color: #fff;
+	font-family: courier;
 	margin: 0px;
 }
 
@@ -12,7 +13,6 @@ body {
 
 h1 {
 	color: #ffffff;
-	font-family: courier;
 	font-weight:100;
 	font-size: 26px;
 }
@@ -24,4 +24,11 @@ a, a:visited {
 
 a:hover {
 	color: #2FA1D6;
+}
+
+#links a {
+	top: 67px;
+	position: absolute;
+	left: 43px;
+	font-size:10px;
 }

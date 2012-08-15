@@ -14,7 +14,7 @@ TERRAIN_GEN.Application = new function() {
 	raiseBoundaryZ = 35;
 	BASE_BOUNDARY = 35;
 	
-	TERRAIN_WIDTH = 1100;
+	TERRAIN_WIDTH = 1500;
 	TERRAIN_HEIGHT = 1100;
 	TERRAIN_DEPTH = 15;
 	
@@ -199,8 +199,6 @@ TERRAIN_GEN.Application = new function() {
 	};
 	
 	this.raiseTerrain = function() {
-		console.log(geometry.vertices[1]);
-		
 		for( var i = 0; i < geometry.vertices.length; ++i ) {
 			var v = geometry.vertices[i];
 			
@@ -209,16 +207,6 @@ TERRAIN_GEN.Application = new function() {
 				v.y += Math.random() * 15;
 		}
 		
-		// temp. change material.
-		// console.log(geometry.faces[0].color);
-		/*for( var j = 0; j < geometry.faces.length; ++j ) {
-			var f = geometry.faces[j];
-			
-			//if(this.checkVertexPosition(f.centroid)) {
-				f.materials = [ new THREE.MeshBasicMaterial( { color: 0xFFFFFF, opacity: 0.5 } ) ];
-				//console.log(f.color);
-			//}
-		}*/	
 		this.generateTerrain(geometry);
 	};
 	
